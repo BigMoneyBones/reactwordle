@@ -37,11 +37,20 @@ function App() {
   // const [wordleAnswer, setWordleAnswer] = useState(pickWordleAnswer());
   const [gameState, setGameState] = useState("playing"); // 3 possible values 'playing', 'won', 'lost'
 
+  // when a key is pressed on the keyboard, or clicked on the virtual keyboard, invoke handleKeyPress
   const handleKeyPress = (key) => {
-    onkeyup;
+    console.log(key);
   };
 
   const handleBackspace = () => {};
+
+  const pickWordleAnswer = () => {};
+
+  const checkAndUpdateGameState = () => {};
+
+  const checkIsValidGuess = () => {};
+
+  const handleEnterKey = () => {};
 
   return (
     <div className="App">
