@@ -118,7 +118,7 @@ const useWordle = (solution) => {
 
   //   destructure 'event' object and pull the 'key' property from it
   const handleKeyup = ({ key }) => {
-    console.log(key);
+    // console.log(key);
 
     if (key === "Enter") {
       const isValidGuess = validateGuess(); //true if valid guess, false if invalid (truthy)
