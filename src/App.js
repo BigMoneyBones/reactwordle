@@ -11,6 +11,9 @@ function App() {
   const { turn, currentGuess, guesses, isCorrect, usedKeys, handleKeyup } =
     useWordle(solution);
 
+  // Created WordList.js and AnswerList.js to use in place of json file so program can be run without json-server.
+  // Re-created randomSolution variable by plugging in answerList and setting random selected word with setSolution.
+  // Passed setSolution as a dependency.
   useEffect(() => {
     const randomSolution =
       answerList[Math.floor(Math.random() * answerList.length)];

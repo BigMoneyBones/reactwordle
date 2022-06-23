@@ -134,6 +134,7 @@ const useWordle = (solution) => {
       addNewGuess(formatted);
     }
 
+    // Backspace refers to physical backspace key on keyboard, Delete is referring to the key on virtual keypad, this ensures both will function
     if (key === "Backspace" || key === "Delete") {
       setCurrentGuess((prev) => {
         // returns new string based on old string, removing the last character.
